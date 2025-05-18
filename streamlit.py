@@ -18,15 +18,16 @@ es = Elasticsearch(
 )
 
 # Query Elasticsearch: Get top 5 most frequent `username_custom`
-query = {
+query = {    
     "size": 0,
+    "_source": ["username_custom"],
     "aggs": {
-        "top_usernames": {
-            "terms": {
-                "field": "username_custom",  # use `.keyword` for aggregations
-                "size": 5
-            }
+      "topusernames": {
+        "terms": {
+            "field": "username_custom",
+            "size": 5
         }
+      }
     }
 }
 
@@ -36,24 +37,10 @@ st.subheader("Raw Elasticsearch Response")
 st.write(response)
 
 
-query = {
-    "size": 5,
-    "_source": ["username_custom"]
-}
-response = es.search(index=index_name, body=query)
-st.write(response)
-
-
 # Extract data
 buckets = response["aggregations"]["top_usernames"]["buckets"]
-st.subheader("Raw Elasticsearch Buckets")
-st.json(buckets)
 usernames = [bucket["key"] for bucket in buckets]
-st.subheader("Raw Elasticsearch Usernames")
-st.json(usernames)
 counts = [bucket["doc_count"] for bucket in buckets]
-st.subheader("Raw Elasticsearch Counts")
-st.json(counts)
 
 # Convert to DataFrame
 df = pd.DataFrame({
