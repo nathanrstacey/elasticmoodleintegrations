@@ -9,7 +9,7 @@ st.title("Top 5 Usernames from Elasticsearch")
 # Elastic credentials
 cloud_id = "CCD_AF:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbzo0NDMkNmE1ZGJiMTEwZTA2NGRiZjkyYjY1MWQxOGU2NWY5NmMkY2VhMzU5YmJhY2NlNGY0YmFmMDBkYThkZmEzMmEyYzE="
 api_key = "YjRwTjVaWUIyY1RBOEJfTlJIYVM6bXljWkdyT2JSM1MwMFZGUDdGMHlkZw=="
-index_name = "moodle_mysql"
+index_name = "moodle*"
 
 # Connect to Elasticsearch
 es = Elasticsearch(
