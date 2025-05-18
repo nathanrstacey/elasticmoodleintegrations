@@ -1,4 +1,4 @@
+elasticsearch==8.13.0
 streamlit
-elasticsearch>=8.0.0
 pandas
 plotly
