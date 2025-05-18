@@ -33,7 +33,7 @@ query = {
 # Execute the query
 response = es.search(index=index_name, body=query)
 st.subheader("Raw Elasticsearch Response")
-st.json(response)
+st.code(json.dumps(response, indent=2), language="json")
 
 # Extract data
 buckets = response["aggregations"]["top_usernames"]["buckets"]
