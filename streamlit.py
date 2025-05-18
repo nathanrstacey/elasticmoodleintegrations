@@ -19,7 +19,6 @@ es = Elasticsearch(
 
 # Query Elasticsearch: Get top 5 most frequent `username_custom`
 query = {
-    "size": 5,
     "aggs": {
         "top_usernames": {
             "terms": {
