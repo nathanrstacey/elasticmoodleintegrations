@@ -32,11 +32,19 @@ query = {
 
 # Execute the query
 response = es.search(index=index_name, body=query)
+st.subheader("Raw Elasticsearch Response")
+st.json(response)
 
 # Extract data
 buckets = response["aggregations"]["top_usernames"]["buckets"]
+st.subheader("Raw Elasticsearch Buckets")
+st.json(buckets)
 usernames = [bucket["key"] for bucket in buckets]
+st.subheader("Raw Elasticsearch Usernames")
+st.json(usernames)
 counts = [bucket["doc_count"] for bucket in buckets]
+st.subheader("Raw Elasticsearch Counts")
+st.json(counts)
 
 # Convert to DataFrame
 df = pd.DataFrame({
