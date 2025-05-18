@@ -35,6 +35,15 @@ response = es.search(index=index_name, body=query)
 st.subheader("Raw Elasticsearch Response")
 st.write(response)
 
+
+query = {
+    "size": 5,
+    "_source": ["username_custom"]
+}
+response = es.search(index=index_name, body=query)
+st.write(response)
+
+
 # Extract data
 buckets = response["aggregations"]["top_usernames"]["buckets"]
 st.subheader("Raw Elasticsearch Buckets")
