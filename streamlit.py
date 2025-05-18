@@ -4,10 +4,10 @@ import pandas as pd
 import plotly.express as px
 
 # --- Settings ---
-ES_HOST = "https://your-elasticsearch-endpoint"  # e.g., https://my-cluster.es.us-east-1.aws.found.io
+ES_HOST = "https://6a5dbb110e064dbf92b651d18e65f96c.us-east-1.aws.found.io"  # e.g., https://my-cluster.es.us-east-1.aws.found.io
 ES_USERNAME = "nathan"
 ES_PASSWORD = "mullet11"
-INDEX_NAME = "your-index-name"  # TODO: Replace with actual index name
+INDEX_NAME = "testmoodleuserdata"  # TODO: Replace with actual index name
 
 # --- Connect to Elasticsearch ---
 es = Elasticsearch(
