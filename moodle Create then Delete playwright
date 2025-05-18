@@ -1,0 +1,42 @@
+step('Go to Moodle homepage', async () => {
+    await page.goto('http://ec2-18-206-174-169.compute-1.amazonaws.com/moodle/');
+  });
+
+  step('Navigate to login page', async () => {
+    await page.click('a[href*="/login/index.php"]');
+    await page.waitForSelector('#loginbtn');
+  });
+
+  step('Login as user', async () => {
+    await page.waitForSelector('input#username');
+    await page.fill('input#username', 'nathan');
+    await page.fill('input#password', 'Mullet1!');
+    await page.click('button#loginbtn');
+    await page.waitForSelector('form#login', { state: 'detached', timeout: 10000 });
+    await page.waitForSelector('div#page', { timeout: 10000 });
+  });
+
+  step('Create calendar event', async () => {
+    await page.goto('http://ec2-18-206-174-169.compute-1.amazonaws.com/moodle/calendar/view.php?view=month');
+    await page.click('button[data-action="new-event-button"]');
+    await page.waitForSelector('input#id_name', { timeout: 10000 });
+    await page.fill('input#id_name', 'Synthetic Calendar Test Event');
+    await page.waitForSelector('button[data-action="save"]', { timeout: 10000 });
+    await page.click('button[data-action="save"]');
+    await page.waitForSelector('text=Synthetic Calendar Test Event', { timeout: 10000 });
+  });
+
+  step('Delete calendar event', async () => {
+    await page.goto('http://ec2-18-206-174-169.compute-1.amazonaws.com/moodle/my/'); 
+    await page.waitForSelector('text=Synthetic Calendar Test Event', { timeout: 10000 });
+    await page.click('text=Synthetic Calendar Test Event');
+    await page.waitForSelector('text=User event', { timeout: 10000 });
+
+    const deleteButtonSelector = 'div.modal.moodle-has-zindex.show button.btn.btn-secondary:has-text("Delete")';
+    await page.waitForSelector(deleteButtonSelector, { state: 'visible' });
+    await page.click(deleteButtonSelector);
+
+    const deleteEventButtonSelector = 'div.modal.moodle-has-zindex.show button.btn.btn-primary:has-text("Delete event")';
+    await page.waitForSelector(deleteEventButtonSelector, { state: 'visible' });
+    await page.click(deleteEventButtonSelector);
+  });
