@@ -1,4 +1,4 @@
-elasticsearch==8.16.2
+elasticsearch==8.13.0
 streamlit
 pandas
 plotly
