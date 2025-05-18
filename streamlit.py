@@ -33,8 +33,7 @@ query = {
 
 # Execute the query
 response = es.search(index=index_name, body=query)
-st.subheader("Raw Elasticsearch Response")
-st.write(response)
+
 
 
 # Extract data
