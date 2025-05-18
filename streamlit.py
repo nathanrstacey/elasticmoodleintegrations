@@ -23,7 +23,7 @@ query = {
     "aggs": {
         "top_usernames": {
             "terms": {
-                "field": "username_custom.keyword",  # use `.keyword` for aggregations
+                "field": "username_custom",  # use `.keyword` for aggregations
                 "size": 5
             }
         }
