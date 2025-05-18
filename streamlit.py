@@ -1,13 +1,60 @@
 import streamlit as st
-import streamlit.components.v1 as components
+from elasticsearch import Elasticsearch
+import pandas as pd
+import plotly.express as px
 
-st.title("Kibana Lens Embedded in Streamlit")
+# --- Settings ---
+ES_HOST = "https://your-elasticsearch-endpoint"  # e.g., https://my-cluster.es.us-east-1.aws.found.io
+ES_USERNAME = "nathan"
+ES_PASSWORD = "mullet11"
+INDEX_NAME = "your-index-name"  # TODO: Replace with actual index name
 
-kibana_url = "https://cea359bbacce4f4baf00da8dfa32a2c1.us-east-1.aws.found.io:9243/s/moodle/app/lens#/edit/345c3754-40dc-4aec-90df-b6b70d99dede?_g=(filters:!(),refreshInterval:(pause:!t,value:60000),time:(from:now-30d/d,to:now))"
+# --- Connect to Elasticsearch ---
+es = Elasticsearch(
+    ES_HOST,
+    basic_auth=(ES_USERNAME, ES_PASSWORD),
+    verify_certs=True
+)
 
-# Optional: make height and width dynamic
-iframe_code = f"""
-<iframe src="{kibana_url}" width="100%" height="800" frameborder="0"></iframe>
-"""
+# --- Elasticsearch Query ---
+query = {
+    "query": {
+        "bool": {
+            "must": [
+                {"term": {"user_action": "enroll"}},
+                {"exists": {"field": "course_id"}},
+                {"exists": {"field": "user_name"}}
+            ]
+        }
+    },
+    "_source": ["course_id", "user_name"]
+}
 
-components.html(iframe_code, height=820)
+# --- Run the search ---
+response = es.search(index=INDEX_NAME, body=query, size=1000)
+
+# --- Parse results ---
+hits = response['hits']['hits']
+data = [
+    {
+        "course_id": hit['_source'].get("course_id", "unknown"),
+        "user_name": hit['_source'].get("user_name", "unknown")
+    }
+    for hit in hits
+]
+
+df = pd.DataFrame(data)
+
+# --- Display Multi-level Pie Chart ---
+st.title("Enrollments by Course and User")
+
+if not df.empty:
+    fig = px.sunburst(
+        df,
+        path=['course_id', 'user_name'],
+        values=None,  # Default: count of occurrences
+        title="Multi-level Enrollment Breakdown"
+    )
+    st.plotly_chart(fig, use_container_width=True)
+else:
+    st.warning("No data found matching the query.")
