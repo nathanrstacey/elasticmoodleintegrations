@@ -1,0 +1,22 @@
+step('Go to Moodle Dashboard', async () => {
+  await page.goto('http://ec2-18-206-174-169.compute-1.amazonaws.com/moodle/');
+});
+
+step('Click login link', async () => {
+  await page.click('a[href*="/login/index.php"]');
+  await page.waitForSelector('#loginbtn');
+});
+
+step('Login with credentials', async () => {
+  await page.waitForSelector('input#username');
+  await page.fill('input#username', 'nathan');
+  await page.fill('input#password', 'Mullet1!');
+  await page.click('button#loginbtn');
+  await page.waitForSelector('form#login', { state: 'detached', timeout: 10000 });
+  await page.waitForSelector('div#page', { timeout: 10000 });
+});
+
+step('Go to the specified page', async () => {
+  await page.goto('http://ec2-18-206-174-169.compute-1.amazonaws.com/moodle/my/courses.php');
+  await page.waitForLoadState('networkidle');
+});

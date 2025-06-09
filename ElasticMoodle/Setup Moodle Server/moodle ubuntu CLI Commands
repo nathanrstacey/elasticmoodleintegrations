@@ -1,0 +1,32 @@
+sudo apt update
+sudo apt install apache2
+sudo apt install wget -y
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.34-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.34-1_all.deb
+sudo apt-get update
+sudo apt-get install mysql-server -y
+sudo systemctl enable mysql
+sudo apt install php libapache2-mod-php
+sudo apt install php-cli -y
+sudo apt install curl-y
+sudo apt install curl -y
+sudo apt install php-mysql -y
+sudo apt install php-xml -y
+sudo apt install php-mbstring -y
+sudo apt install php-curl -y
+sudo apt install php-zip -y
+sudo apt install php-gd -y
+sudo apt install php-intl -y
+sudo apt install php-soap -y
+sudo apt install php-unicode -y
+if grep -q "^max_input_vars" "/etc/php/8.3/apache2/php.ini"; then     sudo sed -i 's/^max_input_vars.*/max_input_vars = 5000/' "/etc/php/8.3/apache2/php.ini"; else     echo -e "\nmax_input_vars = 5000" | sudo tee -a "$PHP_INI_FILE"; fi
+sudo apt install git -y
+sudo git clone git://git.moodle.org/moodle.git
+sudo mv moodle/ /var/www/html/
+sudo chown -R root /var/www/html/moodle/
+sudo chmod -R 0755 /var/www/html/moodle/
+sudo mkdir /var/www/moodledata
+sudo chmod 0777 /var/www/moodledata/
+sudo systemctl restart apache2
+sudo vim /var/www/html/moodle/config.php
+

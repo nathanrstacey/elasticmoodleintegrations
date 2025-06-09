@@ -1,0 +1,105 @@
+To enable a third-party crawler (like a custom script or bot) to crawl an entire Moodle website, especially beyond the login page and deep into course content, several Moodle admin settings and technical considerations must be addressed. Here's a breakdown:
+
+✅ 1. Login Access for the Crawler
+Most of Moodle is restricted behind authentication. You’ll need:
+
+✅ Option A: Create a Read-Only "Crawler" User
+Go to: Site administration → Users → Accounts → Add a new user.
+
+Create a dedicated user with access to the courses you want to crawl.
+
+Optionally assign a custom role with view-only permissions.
+
+✅ Option B: Use a Token or Session Cookie
+If your crawler uses an API or browser automation (like Selenium), you may need to:
+
+Log in and use the session cookie.
+
+Or generate a web service token (see API note below).
+
+✅ 2. Role Permissions and Course Visibility
+Make sure your crawler user:
+
+Has permission to view course content.
+
+Is enrolled in the courses or has a system role that can view them.
+
+Can see activities, files, forums, and other content (check hidden modules).
+
+To check:
+
+Site administration → Users → Permissions → Define roles.
+
+Create a custom "Crawler Viewer" role or modify an existing role.
+
+Capabilities to grant:
+
+moodle/course:view
+
+moodle/course:viewhiddensections (if needed)
+
+mod/resource:view
+
+mod/page:view
+
+mod/url:view
+
+mod/book:view
+
+✅ 3. Site Navigation and Link Structure
+Make sure:
+
+"Force login" is disabled if public crawling is needed.
+(Site administration → Security → Site policies → Uncheck Force users to log in.)
+
+All pages you want crawled are linked and not orphaned.
+
+If your courses are set to “Hidden” or “Guest access only” and your crawler isn’t logged in, it won’t see them.
+
+✅ 4. Guest Access (Optional)
+Enable guest access if you want public crawling without login:
+
+Site administration → Plugins → Authentication → Manage authentication → Enable Guest access.
+
+For each course:
+
+Go to Course settings → Users → Enrollment methods.
+
+Enable Guest access.
+
+Configure guest role permissions to allow viewing course contents.
+
+✅ 5. Performance & Crawl Restrictions
+If you plan heavy crawling:
+
+Rate limit your crawler to avoid overloading Moodle.
+
+Consider a crawler that respects robots.txt, or implement access control in your bot.
+
+✅ 6. API Access (Alternative to Crawling)
+Instead of HTML crawling, you could:
+
+Use Moodle’s Web Services API.
+
+Generate a token via:
+
+Site administration → Server → Web services → Manage tokens.
+
+Useful functions:
+
+core_course_get_courses
+
+core_course_get_contents
+
+mod_resource_get_resources_by_courses
+
+More info: Moodle Web Service API docs
+
+✅ Summary Checklist
+Setting	Description
+🔒 User Auth	Create crawler user or enable guest access
+👀 Role Permissions	Grant view permissions for relevant modules
+📘 Course Visibility	Enroll user or open courses to guests
+🌐 Site Access	Disable "Force login" if public crawl
+🧠 Structure	Ensure all content is navigable by links
+⚙️ API (Optional)	Use Moodle’s official web services for structured access

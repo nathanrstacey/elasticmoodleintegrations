@@ -1,0 +1,211 @@
+DevOps 101 Intro to DevOps tools and practices
+DevOps101 introduces the collaborative practices and automation tools that bridge the gap between development and IT operations. Students will learn the principles of continuous integration, continuous delivery (CI/CD), infrastructure as code, and monitoring. The course explores popular DevOps tools such as Git, Jenkins, Docker, Kubernetes, and Ansible, with hands-on activities that demonstrate how they streamline software deployment and system management. Emphasis is placed on culture, communication, and feedback loops in agile environments. Ideal for developers, sysadmins, or IT professionals, this course provides the foundational knowledge to begin implementing DevOps in modern software delivery pipelines.
+
+Teacher: nathan stacey
+Ubuntu 101
+Description:
+This introductory course provides a practical foundation in using Ubuntu, one of the most popular and user-friendly Linux distributions. Designed for beginners, it covers essential skills for working with the Ubuntu operating system in desktop and server environments. Participants will learn how to navigate the file system, manage software and packages, configure system settings, and perform basic administrative tasks using both the graphical interface and the command line. By the end of the course, students will be comfortable using Ubuntu for day-to-day computing or as a base for further Linux system administration training.
+
+Topics Covered:
+
+Overview of Linux and Ubuntu
+
+Navigating the Ubuntu desktop and terminal
+
+File system structure and permissions
+
+Installing and managing software with apt
+
+User and group management
+
+Introduction to shell scripting
+
+Basic networking and system services
+
+Target Audience:
+Anyone new to Linux, including students, aspiring system administrators, developers, and general tech users interested in learning Ubuntu from the ground up.
+
+Teacher: nathan stacey
+Intro to Elasticsearch
+Description:
+This beginner-friendly course introduces the core concepts and practical applications of Elasticsearch, the powerful distributed search and analytics engine used for log analysis, full-text search, and real-time data exploration. Participants will learn how to set up an Elasticsearch cluster, understand the document-based data model, create and manage indices, perform complex queries, and optimize search performance. Through hands-on labs, students will gain foundational experience with mapping, indexing, querying, and basic ingest pipelines, empowering them to build and manage search-driven solutions effectively.
+
+Topics Covered:
+
+What is Elasticsearch?
+
+Data modeling with documents and indices
+
+Index creation, mapping, and settings
+
+CRUD operations and the Query DSL
+
+Basic analyzers and full-text search
+
+Introduction to Kibana for visualization
+
+Target Audience:
+IT professionals, data analysts, developers, or system administrators who want to understand and start using Elasticsearch.
+
+Teacher: nathan stacey
+AIIntro Artificial Intelligence and its applications
+AIIntro offers a comprehensive introduction to the world of artificial intelligence, covering the history, key concepts, and current applications of AI across industries. Students will explore topics such as machine learning, natural language processing, computer vision, and robotics. The course also addresses ethical considerations, biases in AI, and the societal impact of automation. Through case studies and real-world examples, learners will see how AI is used in healthcare, finance, cybersecurity, and customer service. No prior coding experience is required, making this course suitable for anyone curious about AI and its role in shaping the future of work and technology.
+
+Teacher: nathan stacey
+IT Support Essentials of IT
+This course prepares students for real-world IT support roles by covering the core principles of troubleshooting, hardware, software, and user support. Learners will explore common issues in desktop and mobile environments, networking, operating systems (Windows and Linux), and office productivity tools. The course emphasizes help desk protocols, ticketing systems, remote assistance, and effective communication with end users. Through hands-on labs and scenario-based exercises, students will build the technical and soft skills needed to diagnose problems and provide solutions efficiently. Ideal for aspiring help desk technicians or entry-level IT professionals, this course builds the foundation for a career in IT support.
+
+Teacher: nathan stacey
+Building responsive websites with HTML CSS and JS
+WebDev101 is a hands-on course that teaches students how to create modern, responsive websites from the ground up. Starting with HTML for content structure, CSS for styling, and JavaScript for interactivity, learners will build functional and visually appealing web pages. The course includes key topics like responsive design, browser compatibility, semantic markup, DOM manipulation, and event handling. Students will also gain experience with developer tools and version control. By the end of the course, participants will have built several projects and developed a solid foundation in front-end web development. Perfect for beginners looking to enter the tech world or create their own websites.
+
+Teacher: nathan stacey
+Foundations of data management and databases
+DataFund introduces the fundamental concepts of data management, covering how organizations collect, store, organize, and use data effectively. Students will explore data structures, relational databases, SQL queries, data normalization, and data integrity. The course also touches on emerging trends such as NoSQL, data lakes, and data governance. Learners will gain hands-on experience with querying and managing data using tools like MySQL or PostgreSQL. Ideal for beginners in data analysis, business intelligence, or IT, this course equips students with the skills to understand and manipulate structured data for real-world applications.
+
+Teacher: nathan stacey
+Core skills for Linux and Windows Administration
+SysAdmin provides essential training in managing and maintaining both Linux and Windows operating systems in enterprise environments. Students will learn to configure system settings, manage user accounts and permissions, monitor system performance, and automate tasks with scripts. The course also covers file system navigation, networking basics, software installation, and troubleshooting techniques. Special emphasis is placed on command-line usage, security practices, and administrative tools for each OS. Whether preparing for a career in IT or strengthening technical support skills, this course builds a practical foundation for managing systems reliably and securely.
+
+Teacher: nathan stacey
+Python Programming for Beginners
+PythonPro is a beginner-friendly course that introduces students to the fundamentals of Python, one of the most widely used programming languages today. Students will learn how to write and run Python scripts, understand basic syntax, work with variables, data types, conditionals, loops, and functions. The course also introduces essential programming concepts such as debugging, error handling, and using libraries. Through hands-on exercises, learners will build simple programs and gain confidence in their coding skills. Ideal for aspiring developers, data analysts, or anyone looking to automate tasks, this course lays a strong foundation for more advanced Python development.
+
+Teacher: nathan stacey
+Basics of Cloud Computing
+Cloud101 is an entry-level course designed to explain the fundamentals of cloud computing and its impact on modern IT infrastructure. Students will learn about cloud service models (IaaS, PaaS, SaaS), deployment types (public, private, hybrid), and key providers like AWS, Azure, and Google Cloud. The course covers virtualization, scalability, storage solutions, pricing models, and cloud security basics. It also explores use cases and how organizations are leveraging the cloud for agility and innovation. Ideal for IT newcomers and decision-makers alike, this course lays a strong conceptual foundation for further exploration of cloud platforms and certifications.
+
+Teacher: nathan stacey
+Elasticsearch 101
+Elasticsearch 101 introduces students to the foundational elements of Elasticsearch, a powerful search and analytics engine. This course is designed for beginners who want to learn how to deploy and manage Elasticsearch clusters. Students will gain hands-on experience with key concepts such as indexing, mapping, querying, and full-text search. The course also covers essential tools like Kibana for visualizing data and creating dashboards. Through practical exercises and real-world scenarios, learners will develop the skills needed to ingest and analyze data at scale. Whether you're aiming to become a search engineer or simply integrate Elasticsearch into your technology stack, this course provides a strong technical baseline for further exploration.
+
+Teacher: nathan stacey
+Cyber Security and Threat Detection
+This course introduces students to the core concepts of cybersecurity and how to defend systems against modern threats. Topics include types of cyberattacks, threat actors, malware, firewalls, encryption, and security best practices. Students will gain awareness of vulnerabilities in networks, applications, and user behavior, along with methods to mitigate risk. The course also covers basic principles of risk management, incident response, and compliance frameworks such as NIST and ISO. Whether you're pursuing a career in cybersecurity or simply want to secure your digital footprint, this course provides a solid foundation in cyber defense strategies.
+
+Teacher: nathan stacey
+IT Network Basics
+NetBasics provides a beginner-friendly introduction to the fundamentals of computer networking. The course covers essential topics such as network topologies, IP addressing, DNS, DHCP, TCP/IP, routing, and switching. Students will also learn about common hardware components like routers, switches, and firewalls, along with the basics of LANs, WANs, and wireless networks. Practical examples help demystify how data moves across networks, and foundational knowledge is reinforced through hands-on labs or simulations. Ideal for aspiring IT professionals, this course lays the groundwork for further study in network administration, cybersecurity, or IT support.
+
+Teacher: nathan stacey
+Hire Smart
+HireSmart is a comprehensive introduction to the principles and practices of talent acquisition. This course guides learners through every stage of the recruitment process—from workforce planning and job postings to interviewing, selection, and onboarding. Emphasis is placed on creating inclusive hiring strategies, developing employer branding, and using data-driven approaches to attract and retain top talent. Students will explore sourcing techniques, applicant tracking systems (ATS), behavioral interviewing methods, and legal considerations in hiring. Whether you're a new recruiter or a manager involved in hiring decisions, this course equips you with the tools to build a skilled and diverse workforce aligned with your organization’s goals.
+
+Teacher: nathan stacey
+Engage HR
+This course explores how to build a workplace culture that promotes employee satisfaction, loyalty, and long-term retention. Students will learn to measure engagement levels, identify disengagement risks, and implement evidence-based strategies to improve morale and motivation. Topics include recognition programs, career development, feedback mechanisms, wellness initiatives, and leadership communication. The course emphasizes the link between engagement and organizational outcomes such as productivity, innovation, and turnover. Ideal for HR professionals and leaders, EngageHR equips participants with the tools and insights to cultivate a workplace where employees feel valued and invested.
+
+Teacher: nathan stacey
+Performance Reviews
+PerfReview provides a comprehensive look at designing and conducting effective performance evaluations that drive employee development and organizational success. The course covers common appraisal methods, goal setting, competency frameworks, and 360-degree feedback. Emphasis is placed on delivering constructive feedback, conducting productive review meetings, and aligning performance metrics with business objectives. Students will explore how to use performance data for promotions, compensation decisions, and coaching opportunities. Whether you're a new manager or an HR professional looking to revamp your evaluation process, this course helps you implement fair, transparent, and motivating performance systems.
+
+Teacher: nathan stacey
+Remote Work
+This course addresses the unique challenges and opportunities presented by remote and hybrid work environments. Students will learn best practices for managing distributed teams, maintaining productivity, and fostering communication in virtual settings. Topics include remote work policies, digital collaboration tools, performance tracking, cybersecurity awareness, and employee engagement strategies. The course also explores legal considerations, inclusion, and the importance of work-life balance. Ideal for managers, team leads, and HR professionals, this course offers actionable strategies to build a flexible, effective, and connected remote workforce that thrives across locations and time zones.
+
+Teacher: nathan stacey
+Team Building
+This course focuses on the strategies and practices HR professionals use to cultivate high-performing teams. Students will explore the stages of team development, role alignment, communication styles, and team dynamics. The course emphasizes the importance of trust, shared goals, and effective leadership in driving performance. Learners will also examine tools for team assessments, conflict resolution, and performance incentives. Case studies demonstrate how HR can influence team cohesion through culture-building, skill development, and engagement initiatives. Whether forming new teams or optimizing existing ones, this course provides practical techniques to build collaborative, motivated, and results-driven teams.
+
+Teacher: nathan stacey
+Employee Law
+This course introduces the key legal principles governing the workplace, providing a practical overview of employment laws that affect hiring, managing, and terminating employees. Topics include anti-discrimination laws, wage and hour regulations, employee rights, workplace safety, and HR documentation practices. Students will learn how to identify compliance risks and apply laws to real-world scenarios. The course also covers current regulatory trends and the importance of maintaining up-to-date policies. Aimed at HR professionals, supervisors, and small business owners, this course builds awareness and confidence in navigating employment law to reduce risk and protect both employees and employers.
+
+Teacher: nathan stacey
+Conflict Rx
+ConflictRx equips learners with strategies to identify, manage, and resolve workplace conflicts constructively. The course covers conflict types, root causes, and the psychological dynamics that drive disagreements. Students will learn proven resolution techniques including active listening, negotiation, mediation, and collaborative problem-solving. Emphasis is placed on maintaining professional relationships, fostering open communication, and creating a positive workplace culture. Through scenarios and role-play exercises, participants gain confidence in addressing tension before it escalates. Ideal for managers, HR professionals, and team leads, this course provides the tools to turn conflict into an opportunity for growth and innovation.
+
+Teacher: nathan stacey
+Diversity
+This course provides a foundational understanding of workplace diversity, equity, and inclusion (DEI), emphasizing the value of diverse teams and respectful communication. Students will examine how identity, background, and bias influence workplace interactions and decision-making. Topics include cultural competency, inclusive language, unconscious bias, and conflict prevention in diverse settings. Case studies and practical tools help learners navigate real-world scenarios while fostering empathy and mutual respect. Whether you're a team member, supervisor, or HR professional, this course empowers you to build more inclusive, collaborative, and effective workplace environments.
+
+Teacher: nathan stacey
+Onboard 101
+This course explores best practices for onboarding and orienting new employees, ensuring they feel welcomed, prepared, and aligned with organizational goals. Students will learn how to design and implement onboarding programs that go beyond paperwork—focusing on cultural integration, job readiness, and early engagement. Topics include pre-boarding, orientation strategies, role-specific training, mentorship, and performance milestones during the first 90 days. The course highlights how effective onboarding reduces turnover, accelerates productivity, and improves employee satisfaction. Ideal for HR professionals and team leaders, this course equips learners to create structured, scalable onboarding experiences that set new hires up for long-term success.
+
+Teacher: nathan stacey
+HR Basics
+This course provides an overview of core human resources principles and practices that support effective people management within organizations. Topics include the roles and responsibilities of HR professionals, employee lifecycle stages, regulatory compliance, workplace policies, and the strategic impact of HR on business success. Students will explore foundational concepts such as hiring practices, employee relations, training and development, performance management, and compensation strategies. Ideal for new HR professionals, managers, or anyone seeking to understand the HR function, this course equips learners with essential knowledge and tools to foster a productive and legally compliant work environment.
+
+Teacher: nathan stacey
+Comms101 Basic radio and gear prep for long-range foot movements
+Comms101 introduces the fundamentals of radio communication in tactical and field environments. Students will learn how to operate handheld and vehicle-mounted radios, use proper voice procedures, and establish secure, clear communication networks. The course covers frequency management, call signs, phonetic alphabets, message formatting, and encryption basics. Emphasis is placed on reliability, brevity, and clarity under stress, with practical exercises in radio checks, reporting, and relaying critical information. This course is ideal for military personnel, emergency responders, and security professionals who need dependable communication skills in dynamic or austere conditions.
+
+Teacher: nathan stacey
+RuckPrep Conditioning and gear prep for long-range foot movements
+RuckPrep prepares students for long-distance foot movements—commonly known as "rucking"—by focusing on physical conditioning, gear selection, and load management. Topics include proper packing techniques, weight distribution, footwear selection, blister prevention, hydration strategies, and route planning. The course emphasizes endurance training and injury prevention to ensure readiness for extended movements over challenging terrain. Students will participate in progressive ruck marches and learn how to build both stamina and mental toughness. Whether training for military selection, backpacking, or fitness, RuckPrep develops the strength, knowledge, and mindset needed to thrive under load in real-world conditions.
+
+Teacher: nathan stacey
+CQBIntro Introduction to Close Quarters Battle CQB tactics
+CQBIntro offers a foundational understanding of Close Quarters Battle (CQB), where rapid decision-making and precision are critical. Students will learn entry techniques, room-clearing procedures, sector responsibility, and team-based movement within confined or built environments. The course also covers flashbang deployment, hallway and stairwell navigation, target discrimination, and threat engagement under low-light conditions. Emphasis is placed on safety, communication, and minimizing risk in dynamic, high-stress situations. Designed for military, law enforcement, or tactical trainees, this course prepares students for operations where speed, coordination, and control are essential in close-quarters engagements.
+
+Teacher: nathan stacey
+CamoConceal Camouflage techniques and concealment in various terrains
+CamoConceal teaches students how to blend into natural and built environments using effective camouflage and concealment strategies. Topics include natural and artificial camouflage, body and gear concealment, movement discipline, light and noise control, and using terrain to avoid detection. The course explores how different environments—such as woodland, desert, snow, and urban areas—require tailored concealment tactics. Students will practice constructing hides, observation posts, and movement routes while avoiding visual, infrared, and thermal detection. Ideal for military personnel, hunters, or survivalists, this course equips learners with skills to remain undetected and maintain tactical advantage.
+
+Teacher: nathan stacey
+FireTeam Fire team roles formations and battlefield communication
+FireTeam focuses on the structure, tactics, and responsibilities of a fire team, the foundational unit in infantry operations. Students will explore the roles of team leader, rifleman, automatic rifleman, and grenadier, as well as how each role contributes to mission success. The course covers movement formations, fire and maneuver techniques, immediate action drills, and effective communication under stress. Students will also learn radio procedures and hand signals critical for non-verbal coordination in combat environments. Whether training for military service or tactical instruction, this course builds essential small-unit skills and fosters team cohesion in dynamic operational scenarios.
+
+Teacher: nathan stacey
+UrbanOps Fundaments of urban warfare and close-quarters combat
+UrbanOps provides an introduction to the unique challenges and tactics involved in conducting operations in urban environments. Students will learn room-clearing techniques, movement through buildings and streets, use of cover and concealment, and team coordination in confined spaces. The course also addresses threat identification, breaching strategies, and the psychological factors of close-quarters battle (CQB). Emphasis is placed on situational awareness, rules of engagement, and minimizing collateral damage. Ideal for military personnel, law enforcement, or tactical enthusiasts, UrbanOps prepares students to operate effectively in densely populated and structurally complex areas.
+
+Teacher: nathan stacey
+PatrolOps Techniques for planning and executing infantry patrols
+PatrolOps focuses on the tactical planning, execution, and leadership of infantry patrols in a variety of operational environments. Students will explore different types of patrols—including reconnaissance, combat, and security—along with associated planning considerations such as objectives, routes, gear, team roles, and contingencies. The course emphasizes operational security, stealth movement, communication protocols, and actions on contact. Learners will analyze case studies and simulate patrol operations to build decision-making and leadership skills. Designed for military personnel and tactical leaders, this course strengthens the ability to lead effective patrols with discipline and precision.
+
+Teacher: nathan stacey
+NavMap101 Land navigation and topolgraphical map reading
+NavMap101 teaches the essential skills of land navigation using topographic maps, compasses, and terrain association techniques. Students will learn how to interpret map symbols, determine grid coordinates, measure distances, calculate bearings, and plan routes. The course also covers resection, intersection, and the use of pace count for accurate movement across various terrains. Practical exercises reinforce the ability to navigate confidently in unfamiliar or GPS-denied environments. Whether preparing for field operations, wilderness travel, or military applications, this course equips students with critical navigation skills essential for mission success and personal safety.
+
+Teacher: nathan stacey
+Marksnm101 Marksmanship principles and weapon safety
+
+Marksmn101 introduces students to the core principles of marksmanship with an emphasis on safety, accuracy, and weapon handling. The course covers firearm safety rules, shooting fundamentals, proper stance, grip, sight alignment, trigger control, and breath discipline. Students will also learn range procedures, target identification, and how to maintain their weapons. Through both classroom instruction and live or simulated practice, participants will develop the skills and confidence needed for responsible firearm use. This course is ideal for beginners, military trainees, or anyone looking to build a strong foundation in basic marksmanship and firearms safety.
+
+Teacher: nathan stacey
+Fundamentals of modern infantry tactics and movement
+InfTactics provides a foundational understanding of contemporary infantry tactics used in military operations. Students will study principles such as fire and movement, cover and concealment, bounding overwatch, and unit coordination in offensive and defensive scenarios. The course explores squad- and platoon-level tactics, terrain analysis, and the integration of support elements like indirect fire or UAV reconnaissance. Emphasis is placed on situational awareness, decision-making under stress, and small unit leadership. Suitable for military personnel, tactical trainers, or defense enthusiasts, this course lays the groundwork for effective movement and engagement strategies in modern combat environments.
+
+Teacher: nathan stacey
+Heritage101 Overview of Marine Corps heritage symbols and legacy
+Heritage101 introduces students to the rich legacy of the United States Marine Corps through its history, symbols, traditions, and cultural impact. The course examines how the Marine Corps has evolved from its founding in 1775 to become one of the world’s most respected fighting forces. Topics include the significance of uniforms, medals, mottos, and famous Marine landmarks. Students will also explore the Marine Corps’ representation in literature, media, and public consciousness. This course is perfect for recruits, enthusiasts, and those seeking to better understand the pride and traditions that unite Marines across generations.
+
+Teacher: nathan stacey
+USMCValues Evolution of Marine Corps core values and traditions
+USMCValues explores the foundational principles of the Marine Corps—honor, courage, and commitment—and how these values have guided generations of Marines. The course traces the historical origins of these ideals and their application in both combat and daily service. Students will examine key traditions, symbols, mottos, and rituals that reinforce the Corps’ unique identity, including the Eagle, Globe, and Anchor, the Marine Corps birthday, and the importance of esprit de corps. Through case studies and historical reflections, learners will gain a deeper understanding of how core values influence leadership, discipline, and cohesion within the ranks.
+
+Teacher: nathan stacey
+HistBattles Study of historically significant Marine Corps battles
+HistBattles offers an in-depth analysis of the most pivotal battles in Marine Corps history, from early 20th-century engagements to modern combat operations. Students will explore battles such as Belleau Wood, Iwo Jima, Chosin Reservoir, Hue City, and Fallujah, analyzing the strategic, tactical, and human elements that defined each conflict. The course highlights leadership decisions, terrain challenges, logistical obstacles, and the heroism of Marines under fire. Emphasis is placed on how these engagements shaped Marine Corps doctrine, reputation, and global impact. Ideal for history enthusiasts and military professionals alike, this course delivers a powerful narrative of courage, sacrifice, and evolution on the battlefield.
+
+Teacher: nathan stacey
+ModernOps Marine Corps operations in modern conflicts post 9/11
+ModernOps focuses on the United States Marine Corps’ operations in the post-9/11 era, including campaigns in Afghanistan, Iraq, and other regions impacted by global terrorism. Students will explore modern combat strategies, urban warfare, counterinsurgency, and humanitarian missions. The course highlights technological advancements, small-unit tactics, and the integration of joint and coalition forces. Emphasis is placed on the changing nature of warfare, including asymmetric threats and hybrid conflict environments. Through case studies, mission briefings, and doctrinal review, learners will gain a contemporary understanding of how the Marine Corps continues to adapt and excel in modern warfare.
+
+Teacher: nathan stacey
+USMC Leaders Key leaders who shaped Marine Corps history
+USMCLeaders highlights the influential figures whose leadership and vision helped define the Marine Corps’ identity and legacy. Students will study legendary Marines such as Archibald Henderson, John A. Lejeune, Lewis "Chesty" Puller, and modern leaders who influenced doctrine, values, and force development. The course explores their strategic decisions, battlefield leadership, and contributions to Marine Corps culture and traditions. By examining leadership styles, pivotal moments in history, and enduring legacies, students will gain insight into how strong leadership has shaped the Corps across generations. This course is ideal for those interested in military leadership, mentorship, and institutional development.
+
+Teacher: nathan stacey
+NamCombat Marine Corps involvement in the Vietnam War
+NamCombat provides a focused exploration of the Marine Corps' extensive involvement in the Vietnam War. The course covers major operations such as Starlite, Hue City, Khe Sanh, and the Tet Offensive, while examining the strategic, political, and cultural challenges Marines faced in this unconventional conflict. Topics include counterinsurgency tactics, jungle warfare, helicopter assaults, and civic action programs. Students will also analyze the impact of terrain, public perception, and evolving military doctrine on mission success. Through firsthand accounts, battlefield analysis, and historical context, learners will gain a comprehensive understanding of how the Marine Corps operated and endured during one of America’s most complex wars.
+
+Teacher: nathan stacey
+ColdWarUSMC Marine roles and missions during the Cold War era
+ColdWarUSMC examines the evolving role of the United States Marine Corps during the Cold War, from the end of World War II through the early 1990s. This course explores the strategic and political context of the era, including nuclear deterrence, containment policy, and global military presence. Students will study the Marine Corps’ involvement in key conflicts and crises—such as Korea, Lebanon, the Cuban Missile Crisis, and interventions in Central America—along with its transition into rapid-deployment and expeditionary roles. The course also covers technological innovations, changes in training, and the development of force projection capabilities. Ideal for those interested in military history and geopolitical strategy, this course highlights how the Marine Corps adapted to meet the demands of a shifting global landscape.
+
+Teacher: nathan stacey
+PacTheater Marine Operations in the Pacific Theater WWII
+PacTheater dives deeper into the Pacific campaigns of World War II, analyzing the broader strategic objectives and execution of Marine-led island-hopping operations. Students will explore joint operations with the Navy and Army, the logistical and environmental challenges of fighting in the Pacific, and the tactical innovations that emerged from intense jungle and amphibious warfare. The course also examines enemy tactics, terrain considerations, and how these experiences shaped modern Marine doctrine. Through maps, battle studies, and firsthand accounts, learners gain a comprehensive understanding of the scope and significance of Marine operations in defeating Imperial Japan.
+
+Teacher: nathan stacey
+WWIIMarines Marine Corps battles and contributions during World War II
+WWIIMarines explores the critical role of the U.S. Marine Corps during World War II, with a focus on major battles in the Pacific Theater. Students will study amphibious warfare tactics and examine key operations such as Guadalcanal, Tarawa, Saipan, Iwo Jima, and Okinawa. The course highlights the strategic importance of these battles, the harsh conditions faced by Marines, and the evolution of tactics and leadership during the conflict. Learners will also explore the impact of WWII on Marine Corps identity and reputation. This course is ideal for those interested in military history, combat leadership, and the legacy of Marine valor and resilience.
+
+Teacher: nathan stacey
+USMCFound Origins and foundation of the United States Marine Corps
+Comms101 introduces the fundamentals of radio communication in tactical and field environments. Students will learn how to operate handheld and vehicle-mounted radios, use proper voice procedures, and establish secure, clear communication networks. The course covers frequency management, call signs, phonetic alphabets, message formatting, and encryption basics. Emphasis is placed on reliability, brevity, and clarity under stress, with practical exercises in radio checks, reporting, and relaying critical information. This course is ideal for military personnel, emergency responders, and security professionals who need dependable communication skills in dynamic or austere conditions.
+
+Teacher: nathan stacey

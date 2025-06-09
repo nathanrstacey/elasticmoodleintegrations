@@ -1,0 +1,38 @@
+#!/bin/bash
+set -e
+
+# Update and install Apache
+sudo apt update
+sudo apt install -y apache2 wget curl git
+
+# Install MySQL 8.4
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.34-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.34-1_all.deb
+sudo apt-get update
+sudo apt-get install -y mysql-server
+sudo systemctl enable mysql
+
+# Install PHP and extensions
+sudo apt install -y php libapache2-mod-php php-cli php-mysql php-xml \
+php-mbstring php-curl php-zip php-gd php-intl php-soap
+
+# Set max_input_vars
+PHP_INI_FILE="/etc/php/8.3/apache2/php.ini"
+if grep -q "^max_input_vars" "$PHP_INI_FILE"; then
+  sudo sed -i 's/^max_input_vars.*/max_input_vars = 5000/' "$PHP_INI_FILE"
+else
+  echo -e "\nmax_input_vars = 5000" | sudo tee -a "$PHP_INI_FILE"
+fi
+
+# Clone Moodle
+sudo git clone git://git.moodle.org/moodle.git
+sudo mv moodle/ /var/www/html/
+sudo chown -R root /var/www/html/moodle/
+sudo chmod -R 0755 /var/www/html/moodle/
+
+# Create Moodle data directory
+sudo mkdir /var/www/moodledata
+sudo chmod 0777 /var/www/moodledata/
+
+# Restart Apache
+sudo systemctl restart apache2

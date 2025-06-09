@@ -1,0 +1,157 @@
+[
+  {
+    "set": {
+      "field": "objectid_custom",
+      "value": "{{objectid}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "objecttable_custom",
+      "value": "{{objecttable}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "userid_custom",
+      "value": "{{userid}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "eventname_custom",
+      "value": "{{eventname}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "action_custom",
+      "value": "{{action}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "ip_custom",
+      "value": "{{ip}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "target_custom",
+      "value": "{{target}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "objectid_custom",
+      "value": "{{objectid}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "kv": {
+      "field": "other",
+      "field_split": ",",
+      "value_split": ":",
+      "target_field": "other_split",
+      "ignore_missing": true,
+      "trim_key": "//,/\\\\\\\",{,},/,",
+      "trim_value": "//,/\\\\\\\",{,},/,",
+      "strip_brackets": true
+    }
+  },
+  {
+    "set": {
+      "field": "courseid_custom",
+      "value": "{{courseid}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "startdate_custom",
+      "value": "{{startdate}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "enrolstartdate_custom",
+      "value": "{{enrolstartdate}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "username_custom",
+      "value": "{{other_split.username}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "shortname_custom",
+      "value": "{{other_split.courseshortname}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "enrich": {
+      "field": "username_custom",
+      "policy_name": "moodle-userid",
+      "target_field": "userinfo",
+      "override": false,
+      "ignore_failure": true
+    }
+  },
+  {
+    "enrich": {
+      "field": "shortname_custom",
+      "policy_name": "moodle-courseid",
+      "target_field": "courseinfo",
+      "ignore_missing": true
+    }
+  },
+  {
+    "set": {
+      "field": "userinfo_custom.country",
+      "value": "{{userinfo.country}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "userinfo_custom.institution",
+      "value": "{{userinfo.institution}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "userinfo_custom.department",
+      "value": "{{userinfo.department}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "userinfo_custom.timezone",
+      "value": "{{userinfo.timezone}}",
+      "ignore_empty_value": true
+    }
+  },
+  {
+    "set": {
+      "field": "userinfo_custom.city",
+      "value": "{{userinfo.city}}",
+      "ignore_empty_value": true
+    }
+  }
+]
